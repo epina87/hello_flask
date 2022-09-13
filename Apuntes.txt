@@ -1,0 +1,16 @@
+Activamos Flask con el archivo hello.py -> set FLASK_APP=hello.py 
+Iniciamos el servidor -> flask run
+Iniciamos el servidor servidor 5001-> flask run -p 5001
+
+Via web -> http://127.0.0.1:5000/hola
+
+Definimos el Entorno de trabajo
+Entorno de desarrollo -> set FLASK_ENV=development
+                         o   
+                         set FLASK_DEBUG=True   
+
+Automatizar el terminal, para iniciar
+    pip install python_dotenv
+    actualizar el requeriment -> pip freeze > requirements.txt
+    crear archivo ".env" y añadir -> FLASK_APP=hello.py
+                                     FLASK_DEBUG=True
